@@ -1,0 +1,34 @@
+<div class="contact bg-white">
+  <div class="contact-content text-white">
+      <h1 class="h1-dark">
+        portfolio section
+      </h1>
+
+      <div class="star-icon-dark">
+        <span></span>
+        <i class="fa-solid fa-star"></i>
+        <span></span>
+      </div>
+
+    <div id="port-gallery" class="container contact-inputs">
+      <div class="row">
+        <div *ngFor="let src of ImgsSrc;" class="col-md-6 col-xl-4">
+          <div class="port-item">
+            <div class="port-hover" (click)="visible=false;modalSrc=src">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <img [src]="src" alt="" >
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+
+  <div (click)="CloseModal($event,modalImg)" [class.d-none]="visible" id="modal">
+    <img #modalImg [src]="modalSrc" alt="" class="img-responsive">
+  </div>

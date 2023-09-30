@@ -1,0 +1,37 @@
+<div class="contact bg-white">
+  <div class="contact-content text-white">
+      <h1 class="h1-dark">
+        Contact section
+      </h1>
+
+      <div class="star-icon-dark">
+        <span></span>
+        <i class="fa-solid fa-star"></i>
+        <span></span>
+      </div>
+
+    <div class="container contact-inputs w-75">
+      <div class="position-relative input">
+        <label [class.show-label]="username.length" >user Email</label>
+      <input [(ngModel)]="username" type="text" class="form-control" placeholder="User Name">
+      </div>
+        <div class="position-relative input">
+          <label [class.show-label]="userage.length" >user Age</label>
+        <input [(ngModel)]="userage" type="text" class="form-control" placeholder="User Age">
+        </div>
+        <div class="position-relative input">
+          <label [class.show-label]="useremail.length" >user Email</label>
+        <input [(ngModel)]="useremail" type="text" class="form-control" placeholder="User Email">
+        </div>
+        <div class="position-relative input">
+          <label [class.show-label]="userpass.length" >user Password</label>
+        <input [(ngModel)]="userpass" type="password" class="form-control" placeholder="User Password">
+        </div>
+        <div class="w-100 text-start">
+          <button class="btn">Send Message </button>
+
+        </div>
+    </div>
+
+  </div>
+  </div>
